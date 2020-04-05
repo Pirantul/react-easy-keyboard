@@ -80,7 +80,7 @@ const keybStyle = {
     <div className="App">
       <div className="keyboard">
         <div className="field">{figs}</div>
-        <Keyboard layout={layoutRus} style={keybStyle} onClickBtn={onClickBtn} />
+        <Keyboard layout={layoutEng} style={keybStyle} onClickBtn={onClickBtn} />
       </div>
     </div>
     
