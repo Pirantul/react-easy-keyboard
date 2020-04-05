@@ -1,0 +1,75 @@
+html {
+  background: #DEE5ED;
+
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+
+.App {
+  margin: 100px auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  
+  
+}
+
+.keyboard {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.field {
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 2px 0px rgba(75, 107, 160, 0.34);
+  border-radius: 20px;
+  font-size: 42px;
+  line-height: 170%;
+  color: #2F3647;
+  padding-left: 20px;
+}
+
+
+@media screen and (min-width:1601px) and (max-width:1900px) {
+  .keyboard {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width:1201px) and (max-width:1600px) {
+  .keyboard {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+  .keyboard {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width:801px) and (max-width:1024px) {
+  .keyboard {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:641px) and (max-width:800px) {
+  .keyboard {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+  .keyboard {
+    width: 100%;
+  }
+}
+
+
