@@ -66,9 +66,15 @@ html {
   }
 }
 
-@media screen and (min-width:320px) and (max-width:640px) {
+@media screen and (min-width:240px) and (max-width:640px) {
   .keyboard {
     width: 100%;
+  }
+  .keyb-row {
+    width: 99vw;
+  }
+  .field {
+    margin-left: 5px;
   }
 }
 
