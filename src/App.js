@@ -29,7 +29,7 @@ function App() {
     setFigs(word);
     
 }
-
+/* Replace the layout with "layoutFig" in Keyboard-component for displaying the numeric keypad */
 const layoutFig = ["1 2 3", "4 5 6", "7 8 9", ". 0 <"];
 const layoutRus = ["А Б В Г Д Е Ё Ж", "З И Й К Л М Н", "О П Р С Т У Ф Х", "Ц Ч Ш Щ Ъ Ы Ь", "CAPS Э Ю Я ПРОБЕЛ <"];
 const layoutEng = ["A B C D E F", "G H I J K L M", "N O P Q R S", "T U V W X Y Z", "CAPS SPACE <"];
