@@ -73,7 +73,6 @@ const keybStyle = {
     <div className="App">
       <div className="keyboard">
         <div className="field">{figs}</div>
-        <Keyboard layout = {["1 2 3", "4 5 6", "7 8 9", ". 0 <"]} style={keybStyle} onClickBtn={onClickBtn} />
         <Keyboard layout={layoutEng} style={keybStyle} onClickBtn={onClickBtn} />
       </div>
     </div>
