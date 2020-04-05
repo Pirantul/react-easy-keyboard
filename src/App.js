@@ -9,7 +9,7 @@ function App() {
   const [caps, setCaps] = useState(false);
   
   const onClickBtn = e => {
-    let symbol = e.target.getAttribute("value");
+    let symbol = e.target.getAttribute("btn");
     let word = pass;
     
     if (symbol === 'CAPS') {
@@ -49,6 +49,13 @@ const keybStyle = {
        }
     },
     {
+      name: "ПРОБЕЛ",
+      value: " ",
+      style: {
+        minWidth: "250px",
+         }
+      },
+    {
       name: "CAPS",
       value: "CAPS", //reserved value!
       style: {
@@ -73,7 +80,7 @@ const keybStyle = {
     <div className="App">
       <div className="keyboard">
         <div className="field">{figs}</div>
-        <Keyboard layout={layoutEng} style={keybStyle} onClickBtn={onClickBtn} />
+        <Keyboard layout={layoutRus} style={keybStyle} onClickBtn={onClickBtn} />
       </div>
     </div>
     

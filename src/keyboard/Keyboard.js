@@ -3,8 +3,7 @@ import "./keyb.css";
 import Row from "./Row";
 
 const Keyboard = (props) => {
-    console.log(props);
-    
+        
     const layout = props.layout;
     let btnsRow = [];
 
@@ -12,7 +11,6 @@ const Keyboard = (props) => {
         btnsRow.push(row.split(' '));
     });
     
-
     return (
         <div id="keyb">
             {btnsRow.map((row, i) => {

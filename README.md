@@ -1,5 +1,5 @@
 
-## Very easy keyboard for React JS
+## Very easy (simple) keyboard for React JS
 
 Demo: [in sandbox](https://codesandbox.io/s/github/Pirantul/react-easy-keyboard)
 

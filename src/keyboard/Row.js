@@ -1,5 +1,5 @@
 import React from "react";
-import Key from "./Key";
+import Btn from "./Btn";
 
 const Row = (props) => {
     const row = props.row;
@@ -7,7 +7,7 @@ const Row = (props) => {
     return(
         <div className='keyb-row'>
             {row.map((btn) => {
-                return <Key key={btn} btn={btn} keyProp={props.keyProp} onClickBtn={props.onClickBtn} />
+                return <Btn key={btn} btn={btn} keyProp={props.keyProp} onClickBtn={props.onClickBtn} />
             })}
         </div>
     )
