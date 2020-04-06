@@ -81,20 +81,23 @@ const keybStyle = {
       value: "<",
       style: {
         minWidth: "40px",
+        maxWidth: lay===0?"":"100px",
       }
     },
     {
       name: lay===0?"abc":"123",
       value: "abc",
       style: {
-        minWidth: "65px",
+        minWidth: "50px",
+        maxWidth: lay===0?"":"100px",
       }
     },
     {
       name: "Я",
       value: "Я",
       style: {
-        maxWidth: "100px"
+        minWidth: "40px",
+        maxWidth: "80px"
       }
     }
   ]
