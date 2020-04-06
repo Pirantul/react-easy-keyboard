@@ -70,11 +70,23 @@ html {
   .keyboard {
     width: 100%;
   }
+  
   .keyb-row {
     width: 99vw;
   }
+  
+  .keyb-btn {
+    height: 60px!important;
+    line-height: 60px!important;
+    font-size: 25px!important;
+  }
+
   .field {
     margin-left: 5px;
+  }
+  
+  div#keyb {
+    height: auto;
   }
 }
 
