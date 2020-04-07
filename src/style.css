@@ -33,6 +33,9 @@ html {
   line-height: 170%;
   color: #2F3647;
   padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -79,10 +82,6 @@ html {
     height: 60px!important;
     line-height: 60px!important;
     font-size: 25px!important;
-  }
-
-  .field {
-    margin-left: 5px;
   }
   
   div#keyb {
