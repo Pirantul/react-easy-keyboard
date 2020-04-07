@@ -3,7 +3,7 @@
 
 Demo: [in sandbox](https://codesandbox.io/s/github/Pirantul/react-easy-keyboard)
 
-####You can:
+#### You can:
 - add new button layout (language) by editing a single line
 - change buttons styles
 - override buttons assignments (name or value)
