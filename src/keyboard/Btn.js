@@ -1,26 +1,26 @@
 import React from "react";
 
-const Btn = (props) => {
+const Btn = ({btn, keyProp, onClickBtn}) => {
 
-    let arrKeyStyle = props.keyProp.key;
-    let keyStyle = props.keyProp.keysStyle;
-    let btn = {
-            name: props.btn,
-            value: props.btn
+    let arrKeyStyle = keyProp.key;
+    let keyStyle = keyProp.keysStyle;
+    let button = {
+            name: btn,
+            value: btn
         };
   
     arrKeyStyle.map(val  => {
                
-        if (val.name === props.btn) {
+        if (val.name === btn) {
             keyStyle = {...keyStyle , ...val.style};
-            btn = val
+            button.value = val.value;
         } 
     })
         
     return (<>
-                <div onClick={props.onClickBtn} btn={btn.value} className="keyb-btn" 
+                <div onClick={onClickBtn} btn={button.value} className="keyb-btn" 
                   style={ keyStyle }>
-                    {btn.name}
+                    {button.name}
                 </div>
             </>
     )}
