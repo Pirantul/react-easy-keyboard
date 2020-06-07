@@ -10,13 +10,17 @@ html {
   -ms-user-select: none;       /* Internet Explorer/Edge */
 }
 
+body {
+  font-family: 'Open Sans', Roboto, Tahoma, Verdana, sans-serif;
+  font-size: var(--fs3);
+  line-height: 1.5em;
+  color: var(--neutral-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
   margin: 100px auto;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  
-  
 }
 
 .keyboard {
