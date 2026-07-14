@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #dee5ed;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #2f3647;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.demo {
+  margin: 32px auto 64px;
+  padding: 0 20px;
+  max-width: 960px;
+}
+
+.demo__header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.demo__eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0078e8;
+}
+
+.demo__header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.demo__lead {
+  margin: 0 auto;
+  max-width: 560px;
+  color: #5b6577;
+  font-size: 1rem;
+}
+
+.demo__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #5b6577;
+}
+
+.demo__clear {
+  appearance: none;
+  border: 1px solid #c5d0de;
+  background: #fff;
+  color: #2f3647;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.demo__clear:hover {
+  border-color: #0078e8;
+  color: #0078e8;
+}
+
+.demo__langs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  justify-content: stretch;
+  width: 100%;
+  margin: 0 auto 14px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.demo__lang {
+  appearance: none;
+  display: inline-flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-width: 0;
+  padding: 7px 4px;
+  border: 1px solid #c5d0de;
+  border-radius: 10px;
+  background: #fff;
+  color: #2f3647;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease, color 0.12s ease;
+}
+
+.demo__lang:hover {
+  border-color: #0078e8;
+}
+
+.demo__lang--active {
+  border-color: #0078e8;
+  background: #0078e8;
+  color: #fff;
+}
+
+.demo__lang-code {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.demo__lang-name {
+  font-size: 0.625rem;
+  opacity: 0.85;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 2px;
+}
+
+.demo__langs-hint {
+  margin: 0 auto 24px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #5b6577;
+}
+
+.demo__langs-hint code {
+  font-size: 0.75rem;
+  background: rgba(0, 120, 232, 0.08);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.demo__keyboard {
+  margin: 0 auto;
+  width: min(100%, 920px);
+}
+
+.demo__keyboard .on-screen-keyboard {
+  margin-top: 28px;
+  gap: 12px;
+}
+
+.demo__keyboard .on-screen-keyboard__key {
+  min-height: clamp(56px, 8.5vw, 92px);
+  margin: 8px 5px;
+  border-radius: 16px;
+}
+
+.demo__field {
+  min-height: clamp(64px, 10vw, 88px);
+  background: #ffffff;
+  box-shadow: inset 0 2px 0 rgba(75, 107, 160, 0.34);
+  border-radius: 20px;
+  font-size: clamp(26px, 4vw, 48px);
+  line-height: 1.6;
+  color: #2f3647;
+  padding: 14px 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+}
+
+.demo__placeholder {
+  color: #9aa3b2;
+}
+
+.demo__footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.demo__footer a {
+  color: #0078e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.demo__footer a:hover {
+  text-decoration: underline;
+}
+
+.demo__version {
+  position: fixed;
+  right: 16px;
+  bottom: 12px;
+  margin: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(47, 54, 71, 0.08);
+  color: #5b6577;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 10;
+}
+
+@media screen and (max-width: 640px) {
+  .demo {
+    margin-top: 16px;
+    padding: 0 10px;
+  }
+
+  .demo__lang {
+    flex: 0 0 auto;
+    min-width: 52px;
+    padding: 6px 6px;
+  }
+
+  .demo__lang-name {
+    display: none;
+  }
+
+  .on-screen-keyboard__row {
+    width: 100%;
+  }
+
+  .demo__keyboard .on-screen-keyboard {
+    gap: 8px;
+  }
+
+  .demo__keyboard .on-screen-keyboard__key {
+    min-height: 50px !important;
+    line-height: 50px !important;
+    font-size: 20px !important;
+    border-radius: 12px !important;
+    margin: 5px 3px !important;
+  }
+
+  .on-screen-keyboard {
+    height: auto;
+  }
+}

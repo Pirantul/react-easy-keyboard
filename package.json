@@ -1,0 +1,57 @@
+{
+  "name": "react-easy-keyboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "On-screen virtual keyboard for React — for equipment without a physical keyboard (kiosks, POS, tablets, HMI). Multilingual: EN, RU, DE, FR, ES, TR, UZ, KK.",
+  "license": "MIT",
+  "author": "Pirantul",
+  "homepage": "https://github.com/Pirantul/react-easy-keyboard#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pirantul/react-easy-keyboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pirantul/react-easy-keyboard/issues"
+  },
+  "keywords": [
+    "react",
+    "virtual-keyboard",
+    "on-screen-keyboard",
+    "touch-keyboard",
+    "soft-keyboard",
+    "react-component",
+    "keyboard-layout",
+    "multilingual-keyboard",
+    "kiosk",
+    "pos-terminal",
+    "touch-input",
+    "english-keyboard",
+    "russian-keyboard",
+    "german-keyboard",
+    "french-keyboard",
+    "spanish-keyboard",
+    "turkish-keyboard",
+    "uzbek-keyboard",
+    "kazakh-keyboard",
+    "accessibility",
+    "vite"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

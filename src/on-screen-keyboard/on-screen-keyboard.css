@@ -1,0 +1,54 @@
+.on-screen-keyboard {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  margin: 24px auto 0;
+}
+
+.on-screen-keyboard__row {
+  display: flex;
+  justify-content: center;
+}
+
+.on-screen-keyboard__key {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  margin: 6px 4px;
+  padding: 0 8px;
+  background: linear-gradient(180deg, #0078e8 15.62%, #0078e8 94.79%);
+  box-shadow: 0 4px 4px rgba(13, 64, 194, 0.35);
+  border-radius: 20px;
+  font: inherit;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #ffffff;
+  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.12);
+  transition: background 0.12s ease, transform 0.08s ease;
+}
+
+.on-screen-keyboard__key:hover {
+  background: #006ad0;
+}
+
+.on-screen-keyboard__key:active {
+  background: rgb(1, 106, 204);
+  transform: translateY(1px);
+}
+
+.on-screen-keyboard__key:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 2px;
+}
+
+.on-screen-keyboard__key--wide {
+  flex: 1.5;
+}
+
+.on-screen-keyboard__key--action {
+  font-size: 0.72em;
+}
