@@ -35,6 +35,8 @@ You copy `src/on-screen-keyboard/` into your app (or fork the repo) and adapt la
 
 ## Demo
 
+**Live demo:** https://demos.gilazoff.com/keyboard/
+
 ```bash
 git clone https://github.com/Pirantul/react-easy-keyboard.git
 cd react-easy-keyboard
